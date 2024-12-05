@@ -1,0 +1,259 @@
+/* Set the background of the body to black and text to white */
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Styling for the "Add Task" button */
+#openAddModalBtn {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #444;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#openAddModalBtn:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Styling for the "TODO" text in each Todo card */
+.todo-card .card-title {
+    text-transform: uppercase; /* Ensures "TODO" is in uppercase */
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo in the navbar */
+.logo {
+    max-width: 70px;  /* Adjust this value to control logo size */
+    height: auto;
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    justify-content: center; /* Centers the links */
+    gap: 30px;
+    flex-grow: 1; /* Make the navbar links container take up available space */
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    transition: transform 0.2s;
+}
+
+/* Navbar link hover effect (zoom) */
+.navbar-link:hover {
+    transform: scale(1.1);
+}
+
+/* Sign out button */
+.sign-out-container {
+    text-align: right;
+}
+
+.sign-out-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+/* Sign out button hover effect (zoom) */
+.sign-out-button:hover {
+    transform: scale(1.1);
+}
+
+/* Container for the content */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual card styles */
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: translateY(-10px);
+    background-color: rgb(216, 216, 216);
+}
+
+/* Card image styling with monochrome filter */
+.card-img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure image fills container without cropping */
+    filter: grayscale(100%);
+}
+
+/* Card content (title, description) */
+.card-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Ensure the content stretches to fill available space */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Monochrome hover effect for the card */
+.card:hover .card-img {
+    filter: grayscale(100%) brightness(70%);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Todo List Specific Styles */
+.todo-card {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todo-card .card-text {
+    margin: 0;
+}
+
+.todo-card .completed {
+    text-decoration: line-through;
+}
+
+.todo-card button {
+    font-size: 0.9rem;
+}
+
+/* Todo List Container */
+#todoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Container untuk tombol Edit dan Delete */
+/* Container untuk tombol Edit dan Delete */
+.todo-card .d-flex {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; /* Menyusun tombol di tengah */
+    gap: 20px; /* Memberikan jarak antara tombol */
+    width: 100%; /* Memastikan tombol mengambil lebar penuh dari container */
+}
+
+/* Button styles */
+.todo-card .btn {
+    background-color: black;
+    color: white;
+    border: 1px solid #444; /* Border yang konsisten */
+    padding: 8px 16px; /* Padding untuk ukuran tombol yang baik */
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.todo-card .btn:hover {
+    background-color: #333; /* Efek hover dengan warna lebih gelap */
+    color: white;
+}
+
+
+
+/* Input Styling for Add Todo Form */
+#newTask {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+#addTodoForm .btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#addTodoForm .btn:hover {
+    background-color: #ffffff;
+}

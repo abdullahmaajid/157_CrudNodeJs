@@ -1,13 +1,32 @@
-<h1>Sign Up</h1>
-<form action="/signup" method="POST">
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="login-container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        
+        <!-- Sign Up Section -->
+        <h1>Sign Up</h1>
+        <p class="description">Please enter your credentials to Sign Up</p>
+        
+        <form action="/signup" method="POST">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="mb-2">
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p class="signup-link">Sudah punya akun? <a href="/login">Masuk di sini</a>.</p>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
-</form>
-<p>Sudah punya akun? <a href="/login">Login di sini</a>.</p>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Background hitam */
+    color: #000000; /* Warna teks hitam */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Logo Section */
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Ukuran logo */
+    height: auto;
+    margin-bottom: 20px; /* Ruang antara logo dan form */
+}
+
+/* Login Container Styling */
+.login-container {
+    background-color: #ffffff; /* Warna background putih */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow lebih lembut */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Title and Description */
+h1 {
+    font-size: 28px;
+    color: #333333; /* Warna teks abu gelap */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bolding title */
+}
+
+.description {
+    font-size: 14px;
+    color: #666666; /* Warna teks abu-abu */
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666666; /* Warna ikon abu gelap */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+
+    font-size: 16px;
+    border-radius: 12px; /* Rounded corners untuk input */
+    border: 1px solid #c4c4c4;
+    background-color: #efefef; /* Background input abu-abu terang */
+    color: #000000; /* Teks input hitam */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-weight: normal; /* Default text weight */
+}
+
+/* Menghapus efek focus pada input */
+.form-control:focus {
+    border-color: #c4c4c4; /* Border tetap */
+    box-shadow: none; /* Menghilangkan shadow */
+    outline: none; /* Menghilangkan outline */
+}
+
+/* Remove the white effect for placeholder on focus */
+.form-control::placeholder {
+    color: #999; /* Placeholder abu-abu */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #000000; /* Latar belakang hitam */
+    border: none;
+    padding: 12px 20px;
+    color: #dbdbdb; /* Teks putih */
+    border-radius: 12px; /* Rounded corners tombol */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold; /* Bolding button text */
+}
+
+.btn-primary:hover {
+    background-color: #0c0c0c; /* Latar belakang abu-abu terang */
+    color: white;
+    transform: translateY(-2px); /* Efek animasi hover */
+}
+
+/* Signup Link Styling */
+.signup-link {
+    font-size: 14px;
+    color: #666666; /* Warna teks abu gelap */
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #333333; /* Warna link abu gelap */
+    text-decoration: none;
+    font-weight: bold; /* Bolding link */
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .form-control {
+        padding-left: 35px; /* Menyesuaikan ruang untuk ikon di mobile */
+    }
+}

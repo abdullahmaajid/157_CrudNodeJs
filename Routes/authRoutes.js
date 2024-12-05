@@ -20,7 +20,8 @@ router.post('/signup', (req, res) => {
 // Route untuk menampilkan form signup
 router.get('/signup', (req, res) => {
     res.render('signup', {
-        layout: 'layouts/main-layouts'
+        layout: 'layouts/main-layouts',
+        noNavbar: true // Set flag untuk tidak menampilkan navbar
     });
 });
 
@@ -44,11 +45,14 @@ router.post('/login', (req, res) => {
 });
 
 // Route untuk menampilkan form login
+// Route untuk menampilkan form login
 router.get('/login', (req, res) => {
     res.render('login', {
-        layout: 'layouts/main-layouts'
+        layout: 'layouts/main-layouts',
+        noNavbar: true // Set flag untuk tidak menampilkan navbar
     });
 });
+
 
 // Route Logout
 router.post('/logout', (req, res) => {

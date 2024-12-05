@@ -1,6 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
 
-    <div class="container">
-        <h1>Welcome to the Home Page!</h1>
-        <p>This is the home page of our application.</p>
-        <a href="/contact" class="btn btn-primary">Go to Contact Page</a>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<!-- Navbar Section -->
+<header class="navbar">
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
     </div>
+    <nav class="navbar-links">
+        <a href="/" class="navbar-link">Home</a>
+        <a href="/contact" class="navbar-link">Contact</a>
+        <a href="/todo-view" class="navbar-link">Todo</a>
+    </nav>
+    <div class="sign-out-container">
+        <a href="/login" class="sign-out-button">Sign Out</a>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Welcome to the Home Page!</h1>
+    <p>This is the home page of our application.</p>
+
+    <div class="card-container">
+        <!-- Contact Card -->
+        <a href="/contact" class="card">
+            <img src="images/contact.png" alt="Contact" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Contact</h3>
+                <p class="card-description">Get in touch with us for more information or support.</p>
+            </div>
+        </a>
+
+        <!-- Todo Card -->
+        <a href="/todo-view" class="card">
+            <img src="images/todo.png" alt="Todo" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Todo</h3>
+                <p class="card-description">Track your tasks and manage your to-do list effectively.</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>© 2024. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
